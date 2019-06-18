@@ -1,0 +1,2 @@
+module UstunesHelper
+end
