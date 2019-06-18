@@ -30,7 +30,6 @@ a {
 
   &:hover {
     color: rgb(151, 144, 144);
-    background-color: #000;
   }
 }
 
@@ -83,4 +82,16 @@ div {
 
 label {
   display: block;
+}
+
+input {
+    height:3vh;
+    min-height:22px;
+    margin-top: 1%;
+    font-size: 12pt;
+    padding-left: 0.5%;
+    
+    &:hover {
+      color: rgb(151, 144, 144);
+    }
 }
