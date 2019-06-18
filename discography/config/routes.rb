@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :albums
   get 'ustunes/index'
   get 'ustunes/add'
   get 'ustunes/edit'
