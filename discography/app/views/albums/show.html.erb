@@ -10,8 +10,11 @@
   <%= @album.title %>
 </p>
 
-<div class='cover'>
-  <%= image_tag("https://target.scene7.com/is/image/Target/GUEST_efdec761-c2e6-4377-9d54-cbb8765fd03b?wid=488&hei=488&fmt=pjpeg") %>
+<div class='cover'> 
+  <% if @album.cover.attached? %>
+    <image src="<%=(url_for(@album.cover))%>">
+  <% end %>
+
 </div>
 
 <%= link_to 'Edit', edit_album_path(@album) %> |

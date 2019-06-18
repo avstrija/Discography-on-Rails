@@ -21,6 +21,11 @@
     <%= form.text_field :title %>
   </div>
 
+  <div class="cover">
+      <%= form.label "Album Cover" %>
+      <%= form.file_field :cover %><br>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
